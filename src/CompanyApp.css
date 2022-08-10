@@ -23,8 +23,11 @@ body,
 }
 
 h1 {
-  font-family: poppins;
-  font-weight: 700;
+  font-weight: 700 !important;
+}
+h2 {
+  font-weight: 600 !important;
+  font-size: 1.4rem !important;
 }
 
 /* * {
@@ -35,9 +38,11 @@ h1 {
 
 .main-container {
     max-width: 700px  !important;
+    min-height: 100vh;
 }
 
-.back-btn {
+.back-btn,
+.arrowLogo {
   cursor: pointer;
   font-weight: 600;
 }
@@ -76,4 +81,10 @@ label {
 .detail-text span {
   font-weight: 700;
   font-size: 1em;
+}
+
+.arrowLogo {
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 72px);
 }
