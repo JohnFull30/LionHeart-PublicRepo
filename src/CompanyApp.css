@@ -88,3 +88,105 @@ label {
   bottom: 50px;
   left: calc(50% - 72px);
 }
+
+.companyDescription {
+  width: 100%;
+  border: 1px solid #d3eaff;
+  color: var(--color-dark);
+}
+
+.container-checkboxes {
+  max-width: 700px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+}
+
+ul.ks-cboxtags {
+  list-style: none;
+  padding: 20px;
+}
+ul.ks-cboxtags li{
+display: inline;
+}
+ul.ks-cboxtags li label{
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .9);
+  border: 1px solid #FFE8E5;
+  color: #924238;
+  font-weight: 500;
+  border-radius: 5px;
+  white-space: nowrap;
+  margin: 3px 0px;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .2s;
+  margin: 5px 3px;
+}
+
+ul.ks-cboxtags li label {
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+ul.ks-cboxtags li label::before {
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  width: 1rem;
+  font-weight: 900;
+  font-size: 12px;
+  padding: 2px 6px 2px 2px;
+  content: "+";
+  transition: transform .3s ease-in-out;
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label::before {
+  content: "✔";
+  transform: rotate(-360deg);
+  transition: transform .3s ease-in-out;
+  font-weight: 900;
+  font-size: 12px;
+
+}
+
+ul.ks-cboxtags li input[type="checkbox"]:checked + label {
+  border: 1px solid #924238;
+  background-color: #FFE8E5;
+  color: #924238;
+  transition: all .2s;
+}
+
+ul.ks-cboxtags li input[type="checkbox"] {
+display: absolute;
+}
+ul.ks-cboxtags li input[type="checkbox"] {
+position: absolute;
+opacity: 0;
+}
+/* ul.ks-cboxtags li input[type="checkbox"]:focus + label {
+border: 2px solid #e9a1ff;
+} */
+
+/* .form-check {
+  user-select: none;
+}
+
+.form-check-input {
+  border: 0 !important;
+outline: none !important;
+}
+
+.form-check-input:focus,
+.form-check-input:active {
+  border: 0 !important;
+  outline: none !important;
+  border: none;
+background-color: transparent !important;
+resize: none !important;
+} */
