@@ -68,11 +68,11 @@ function StartScreen({ classes, userSubmitted }) {
           <div className="title">For Companies</div>
           <div className="sub-title">Grow your business affordably</div>
           <Button
-          onClick={() => {
-          navigate(`/company`)
-        }}
-           variant="contained" 
-           color="secondary">
+            onClick={() => {
+              navigate(`/onboarding-C`)
+            }}
+            variant="contained"
+            color="secondary">
             Sign up
           </Button>
         </div>

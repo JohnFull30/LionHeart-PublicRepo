@@ -65,19 +65,19 @@ export default function Company6() {
                 <ul className="ks-cboxtags">
                     <li><input checked={inputFields.uxui} onChange={handleInputChange} type="checkbox" id="uxui" /><label htmlFor="uxui">UX/UI</label></li>
                     <li><input checked={inputFields.digitalMarketing} onChange={handleInputChange} type="checkbox" id="digitalMarketing" /><label htmlFor="digitalMarketing">Digital Marketing</label></li>
-                    <li><input checked={inputFields.seo} onChange={handleInputChange} type="checkbox" id="seo"  /><label htmlFor="seo">SEO</label></li>
-                    <li><input checked={inputFields.advertising} onChange={handleInputChange} type="checkbox" id="advertising"  /><label htmlFor="advertising">Advertising</label></li>
-                    <li><input checked={inputFields.backed} onChange={handleInputChange} type="checkbox" id="backed"  /><label htmlFor="backed">Backend Dev</label></li>
-                    <li><input checked={inputFields.frontend} onChange={handleInputChange} type="checkbox" id="backed"  /><label htmlFor="frontend">Frontend Dev</label></li>
+                    <li><input checked={inputFields.seo} onChange={handleInputChange} type="checkbox" id="seo" /><label htmlFor="seo">SEO</label></li>
+                    <li><input checked={inputFields.advertising} onChange={handleInputChange} type="checkbox" id="advertising" /><label htmlFor="advertising">Advertising</label></li>
+                    <li><input checked={inputFields.backed} onChange={handleInputChange} type="checkbox" id="backed" /><label htmlFor="backed">Backend Dev</label></li>
+                    <li><input checked={inputFields.frontend} onChange={handleInputChange} type="checkbox" id="backed" /><label htmlFor="frontend">Frontend Dev</label></li>
                     <li><input checked={inputFields.design} onChange={handleInputChange} type="checkbox" id="design" /><label htmlFor="design">Design</label></li>
-                    <li><input checked={inputFields.analytics} onChange={handleInputChange} type="checkbox" id="analytics"  /><label htmlFor="analytics">Analytics</label></li>
+                    <li><input checked={inputFields.analytics} onChange={handleInputChange} type="checkbox" id="analytics" /><label htmlFor="analytics">Analytics</label></li>
                     <li><input checked={inputFields.blockchain} onChange={handleInputChange} type="checkbox" id="blockchain" /><label htmlFor="blockchain">Blockchain</label></li>
                     <li><input checked={inputFields.googleAds} onChange={handleInputChange} type="checkbox" id="googleAds" /><label htmlFor="googleAds">Google Ads</label></li>
-                    <li><input name='' checked={inputFields.sem} onChange={handleInputChange} type="checkbox" id="sem"  /><label htmlFor="sem">SEM</label></li>
-                    <li className="ks-selected"><input checked={inputFields.content} onChange={handleInputChange} type="checkbox" id="content"  /><label htmlFor="content">Content</label></li>
-                    <li><input checked={inputFields.facebookAds} onChange={handleInputChange} type="checkbox" id="facebookAds"  /><label htmlFor="facebookAds">Facebook Ads</label></li>
+                    <li><input name='' checked={inputFields.sem} onChange={handleInputChange} type="checkbox" id="sem" /><label htmlFor="sem">SEM</label></li>
+                    <li className="ks-selected"><input checked={inputFields.content} onChange={handleInputChange} type="checkbox" id="content" /><label htmlFor="content">Content</label></li>
+                    <li><input checked={inputFields.facebookAds} onChange={handleInputChange} type="checkbox" id="facebookAds" /><label htmlFor="facebookAds">Facebook Ads</label></li>
                     <li><input checked={inputFields.YoutubeAds} onChange={handleInputChange} type="checkbox" id="YoutubeAds" /><label htmlFor="YoutubeAds">Youtube Ads</label></li>
-                     
+
                 </ul>
 
             </form>
@@ -87,7 +87,7 @@ export default function Company6() {
                     <ArrowLogo
                         className='arrowLogo'
                         onClick={() => {
-                            console.log('Company page')
+                            navigate(`/Company`)
                         }} />
                 </div>
             </div>

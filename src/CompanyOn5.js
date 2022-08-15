@@ -2,7 +2,7 @@ import React from 'react'
 import './CompanyApp.css'
 import InputField from './InputField'
 import { useNavigate } from 'react-router-dom'
-import {ReactComponent as ArrowLogo}  from './icons/ArrowIcon5.svg'
+import { ReactComponent as ArrowLogo } from './icons/ArrowIcon5.svg'
 
 
 export default function Company5() {
@@ -61,14 +61,14 @@ export default function Company5() {
                     />
                 </div>
             </div>
-          
+
             <div className='row pb-3 pt-2'>
                 <div className='col'>
-                    <ArrowLogo 
-                    className='arrowLogo' 
-                    onClick={() => {
-                        navigate(`/company/6`)
-                    }}/>
+                    <ArrowLogo
+                        className='arrowLogo'
+                        onClick={() => {
+                            navigate(`/onboarding-C/6`)
+                        }} />
                 </div>
             </div>
         </div>

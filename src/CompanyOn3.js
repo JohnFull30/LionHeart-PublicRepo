@@ -1,11 +1,11 @@
 import React from 'react'
 import './CompanyApp.css'
 import { useNavigate } from 'react-router-dom'
-import {ReactComponent as ReactLogo}  from './icons/QuestionMarkIcon.svg'
-import {ReactComponent as ArrowLogo}  from './icons/ArrowIcon1.svg'
+import { ReactComponent as ReactLogo } from './icons/ProfileIcon.svg'
+import { ReactComponent as ArrowLogo } from './icons/ArrowIcon3.svg'
 
 
-export default function Company1() {
+export default function Company3() {
     const navigate = useNavigate()
 
     return (
@@ -21,36 +21,33 @@ export default function Company1() {
             </div>
             <div className='row'>
 
-                <h1 className='text-center py-5 col'>What is a Lionheart?</h1>
+                <h1 className='text-center py-5 col'>One-click apprenticeships</h1>
             </div>
             <div className='row pb-5 text-center'>
                 <div className='col'>
-                <ReactLogo/>
+                    <ReactLogo />
                 </div>
             </div>
             <div className='row pb-5 text-center'>
                 <div className='col'>
-                <h2>Hire based on capabilities and potential</h2>
+                    <h2>Assign Tasks and Grow Your Business.</h2>
                 </div>
             </div>
             <div className='row pb-5 text-center'>
                 <div className='col'>
-                <p>Browse Lionheart's talent pool non-traditional talent based on experience, focus, personality strengths and more. </p>
+                    <p>Help your project and your apprentice by setting ambitious tasks that your apprentice can work towards. Check in week to week.  </p>
                 </div>
             </div>
-          
+
             <div className='row pb-3 pt-2'>
                 <div className='col'>
-                    <ArrowLogo 
-                    className='arrowLogo' 
-                    onClick={() => {
-                        navigate(`/company/2`)
-                    }}/>
+                    <ArrowLogo
+                        className='arrowLogo'
+                        onClick={() => {
+                            navigate(`/onboarding-C/4`)
+                        }} />
                 </div>
             </div>
-
-
-
         </div>
     )
 }

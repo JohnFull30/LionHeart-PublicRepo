@@ -67,7 +67,7 @@ export default function Company4() {
                     <ArrowLogo
                         className='arrowLogo'
                         onClick={() => {
-                            navigate(`/company/5`)
+                            navigate(`/onboarding-C/5`)
                         }} />
                 </div>
             </div>

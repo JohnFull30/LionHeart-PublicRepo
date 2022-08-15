@@ -1,11 +1,11 @@
 import React from 'react'
 import './CompanyApp.css'
 import { useNavigate } from 'react-router-dom'
-import {ReactComponent as ReactLogo}  from './icons/ProfileIcon.svg'
-import {ReactComponent as ArrowLogo}  from './icons/ArrowIcon3.svg'
+import { ReactComponent as ReactLogo } from './icons/MagnifyingGlassIcon.svg'
+import { ReactComponent as ArrowLogo } from './icons/ArrowIcon2.svg'
 
 
-export default function Company3() {
+export default function Company2() {
     const navigate = useNavigate()
 
     return (
@@ -21,31 +21,31 @@ export default function Company3() {
             </div>
             <div className='row'>
 
-                <h1 className='text-center py-5 col'>One-click apprenticeships</h1>
+                <h1 className='text-center py-5 col'>How it works?</h1>
             </div>
             <div className='row pb-5 text-center'>
                 <div className='col'>
-                <ReactLogo/>
+                    <ReactLogo />
                 </div>
             </div>
             <div className='row pb-5 text-center'>
                 <div className='col'>
-                <h2>Assign Tasks and Grow Your Business.</h2>
+                    <h2>Click, Bid, Win</h2>
                 </div>
             </div>
             <div className='row pb-5 text-center'>
                 <div className='col'>
-                <p>Help your project and your apprentice by setting ambitious tasks that your apprentice can work towards. Check in week to week.  </p>
+                    <p>Find the right apprentice and bid on their  contract at an hourly rate that works for you.  </p>
                 </div>
             </div>
-          
+
             <div className='row pb-3 pt-2'>
                 <div className='col'>
-                    <ArrowLogo 
-                    className='arrowLogo' 
-                    onClick={() => {
-                        navigate(`/company/4`)
-                    }}/>
+                    <ArrowLogo
+                        className='arrowLogo'
+                        onClick={() => {
+                            navigate(`/onboarding-C/3`)
+                        }} />
                 </div>
             </div>
         </div>

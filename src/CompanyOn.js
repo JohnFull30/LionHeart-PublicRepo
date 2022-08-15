@@ -55,13 +55,13 @@ export default function Company() {
       <div className='row pb-3 pt-2'>
         <div className='col'>
           <Button
-          onClick={() => {
-          navigate(`/company/1`)
-        }}
+            onClick={() => {
+              navigate(`/onboarding-C/1`)
+            }}
             className='main-btn'
-          color='primary'
-          size='lg'
-          block
+            color='primary'
+            size='lg'
+            block
           >
             Create account
           </Button>

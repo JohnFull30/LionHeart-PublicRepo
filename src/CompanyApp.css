@@ -41,6 +41,8 @@ h2 {
     min-height: 100vh;
 }
 
+
+
 .back-btn,
 .arrowLogo {
   cursor: pointer;
@@ -169,24 +171,38 @@ ul.ks-cboxtags li input[type="checkbox"] {
 position: absolute;
 opacity: 0;
 }
-/* ul.ks-cboxtags li input[type="checkbox"]:focus + label {
-border: 2px solid #e9a1ff;
-} */
 
-/* .form-check {
-  user-select: none;
+
+/* COMPANY HOME */
+.navbar {
+  height: 80px;
+  position: absolute;
 }
 
-.form-check-input {
-  border: 0 !important;
-outline: none !important;
+.main-container-wNav {
+  max-width: 700px  !important;
+  min-height: calc(100vh-80px);
 }
 
-.form-check-input:focus,
-.form-check-input:active {
-  border: 0 !important;
-  outline: none !important;
-  border: none;
-background-color: transparent !important;
-resize: none !important;
-} */
+.bottom {
+  bottom: 0;
+  box-shadow: 0px 2px 5px 0px rgba(137, 129, 255, 0.75);
+
+}
+
+.navbottom {
+  margin-bottom: 100px;
+}
+
+.top {
+  top: 0;
+  box-shadow: 0px 2px 5px 0px rgba(137, 129, 255, 0.75);
+}
+
+.navtop {
+  margin-top: 100px;
+}
+
+.companyHomeIcon {
+  min-height: 100%;
+}
