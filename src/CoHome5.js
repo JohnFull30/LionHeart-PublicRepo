@@ -7,9 +7,11 @@ import { Button } from 'reactstrap'
 
 export default function CoHome5() {
     const navigate = useNavigate()
+    const width = window.innerWidth
 
     return (
-        <div className='container mt-0 px-auto py-3 main-container'>
+        <div className={`${(width > 500) ? 'mt-5 pt-5 top' : 'mb-5 pb-5 bottom'} container px-auto main-container-wNav`}>
+
             <p>CoHome5</p>
         </div>
     )

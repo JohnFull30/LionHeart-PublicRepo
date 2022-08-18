@@ -15,11 +15,15 @@ html,
 body,
 #root {
     box-sizing: border-box;
-    min-height: 100vh;
     font-family: "Poppins", sans-serif;
     color: var(--color-dark);
   -webkit-font-smoothing: antialiased;
+  scrollbar-gutter: stable;
   -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 h1 {
@@ -30,15 +34,9 @@ h2 {
   font-size: 1.4rem !important;
 }
 
-/* * {
-    box-sizing: border-box;
-    color: var(--color-dark);
-    background-color: var(--color-light);
-} */
 
 .main-container {
     max-width: 700px  !important;
-    min-height: 100vh;
 }
 
 
@@ -175,34 +173,69 @@ opacity: 0;
 
 /* COMPANY HOME */
 .navbar {
-  height: 80px;
-  position: absolute;
+  max-width: 100vw;
+  min-height: 100vh;
+  position: relative;
+  box-sizing: border-box;
+  display: block !important;
+}
+.nav-div-top {
+  position: fixed;
+  width: 100%;
+  height: 4.3rem;
+  background: white;
+  z-index: 1;
+  box-shadow: 0px 2px 5px 0px rgba(137, 129, 255, 0.75);
+}
+.nav-div-bottom {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  height: 4.3rem;
+  background: white;
+  z-index: 1;
+  box-shadow: 0px -2px 5px 0px rgba(137, 129, 255, 0.75);
+}
+.navbar svg:not(.companyHomeIcon){
+  position: sticky;
+  z-index: 2;
+  cursor: pointer;
+  width: 25vw;
+  height: 60px;
+  padding: 0.5rem;
+  transition: all 2s;
+  transition-duration: 2s;
 }
 
+.top svg.active {
+  border-bottom: 2px solid var(--color-dark);
+}
+.bottom svg.active {
+  border-top: 2px solid var(--color-dark);
+}
+
+.navbar.top svg:not(.companyHomeIcon) {
+  position: fixed;
+  top: 10px;
+}
+.navbar.bottom svg:not(.companyHomeIcon) {
+  position: fixed;
+  bottom: 10px;
+}
+.navbar .first {
+  left: 0%;
+}
+.navbar .second {
+  left: 25%;
+}
+.navbar .third {
+  right: 25%;
+}
+.navbar .fourth {
+  right: 0%;
+}
 .main-container-wNav {
-  max-width: 700px  !important;
-  min-height: calc(100vh-80px);
-}
-
-.bottom {
-  bottom: 0;
-  box-shadow: 0px 2px 5px 0px rgba(137, 129, 255, 0.75);
-
-}
-
-.navbottom {
-  margin-bottom: 100px;
-}
-
-.top {
-  top: 0;
-  box-shadow: 0px 2px 5px 0px rgba(137, 129, 255, 0.75);
-}
-
-.navtop {
-  margin-top: 100px;
-}
-
-.companyHomeIcon {
-  min-height: 100%;
+  display: inline-block !important;
+  width: 100%;
+  min-height: calc(100vh-140px);
 }

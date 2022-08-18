@@ -16,6 +16,9 @@ import CoHome2 from "./CoHome2";
 import CoHome3 from "./CoHome3";
 import CoHome4 from "./CoHome4";
 import CoHome5 from "./CoHome5";
+import CoChat from "./CoChat";
+import CoTeam from "./CoTeam";
+import Navbar from "./Navbar";
 
 
 function App() {
@@ -36,13 +39,22 @@ function App() {
         <Route path='5' element={<Company5 />} />
         <Route path='6' element={<Company6 />} />
       </Route>
-      <Route path='/Company'>
-        <Route index element={<CoHome />} />
-        <Route path='2' element={<CoHome2 />} />
-        <Route path='3' element={<CoHome3 />} />
-        <Route path='4' element={<CoHome4 />} />
-        <Route path='5' element={<CoHome5 />} />
+      <Route element={<Navbar />} >
+        <Route path='/Company'>
+          <Route index element={<CoHome />} />
+          <Route path='2' element={<CoHome2 />} />
+          <Route path='3' element={<CoHome3 />} />
+          <Route path='4' element={<CoHome4 />} />
+          <Route path='5' element={<CoHome5 />} />
+        </Route>
+        <Route path='/Chat' element={<CoChat />} />
+
+        <Route path='/Team' element={<CoTeam />} />
+
       </Route>
+
+
+
     </Routes>
 
   );
