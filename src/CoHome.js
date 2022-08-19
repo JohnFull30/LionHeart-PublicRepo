@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from 'reactstrap'
 import InputField from './InputField'
 import { ReactComponent as Icon } from './icons/CoHomeIcon1.svg'
+import SkillsCarousel from './SkillsCarousel'
 
 
 
@@ -14,7 +15,7 @@ export default function CoHome() {
     const width = window.innerWidth
     return (
         <>
-            <div className={`${(width > 500) ? 'mt-5 pt-5 top' : 'mb-5 pb-5 bottom'} container px-auto main-container-wNav`}>
+            <div className={`${(width > 500) ? 'mt-5 pt-5 top' : 'mb-5 pb-5 bottom'} container px-4 mx-auto main-container-wNav`}>
                 <div className='row'>
 
                     <h5 className='text-left py-3 col shadow-sm'>Welcome, Rachel👋</h5>
@@ -36,24 +37,24 @@ export default function CoHome() {
                 </div>
 
 
+
+
+                <div className='row'>
+                    <div className='col-12 text-center'>
+                        <Icon
+                            className='companyHomeIcon'
+                        />
+                    </div>
+                </div>
+                <div className='row'>
+                    <div className='col skillsCarousel'>
+                        <SkillsCarousel />
+                    </div>
+                </div>
                 <Button onClick={() => {
                     navigate('/Company/2')
                 }
                 } >CoHome2</Button>
-                <div className='row'>
-
-                    <Icon
-                        className='companyHomeIcon'
-                    />
-                    <Icon
-                        className='companyHomeIcon'
-                    />
-                    <Icon
-                        className='companyHomeIcon'
-                    />
-
-                </div>
-
             </div>
         </>
     )
