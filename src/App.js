@@ -19,6 +19,9 @@ import CoHome5 from "./CoHome5";
 import CoChat from "./CoChat";
 import CoTeam from "./CoTeam";
 import Navbar from "./Navbar";
+import CoTeam2 from "./CoTeam2";
+import CoTeam3 from "./CoTeam3";
+import CoTeam4 from "./CoTeam4";
 
 
 function App() {
@@ -47,9 +50,16 @@ function App() {
           <Route path='4' element={<CoHome4 />} />
           <Route path='5' element={<CoHome5 />} />
         </Route>
+
+        <Route path='/Team'>
+          <Route index element={<CoTeam />} />
+          <Route path='2' element={<CoTeam2 />} />
+          <Route path='3' element={<CoTeam3 />} />
+          <Route path='4' element={<CoTeam4 />} />
+        </Route>
         <Route path='/Chat' element={<CoChat />} />
 
-        <Route path='/Team' element={<CoTeam />} />
+        {/* <Route path='/Team' element={<CoTeam />} /> */}
 
       </Route>
 

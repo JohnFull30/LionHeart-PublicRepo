@@ -1,9 +1,6 @@
 import React from 'react'
 import './CompanyApp.css'
-import FeaturedApprentices from './FeaturedApprentices'
 import { useNavigate } from 'react-router-dom'
-import { Button } from 'reactstrap'
-import { ReactComponent as Icon } from './icons/CoHomeIcon1.svg'
 import ApprenticeCard from './ApprenticeCard'
 import BidCard from './BidCard'
 
@@ -42,20 +39,19 @@ export default function CoHome3() {
 
                     </div>
                 </div>
+                <div className='row py-3'>
+                    <div className='col d-flex justify-content-between text-danger'>
+                        <h5 className="alert-danger ale">5 min left to bid</h5>
+                        <div>
+
+                            <h3 className="d-inline-block">Current Bid: </h3><h1 className="d-inline-block"> 15$</h1>
+                        </div>
+
+                    </div>
+                </div>
                 <div className='row'>
                     <BidCard />
                 </div>
-
-
-
-
-
-                <Button onClick={() => {
-                    navigate('/Company/4')
-                }
-                } >CoHome4</Button>
-
-
             </div>
         </>
     )

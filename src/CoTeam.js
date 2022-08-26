@@ -1,9 +1,7 @@
 import React from 'react'
 import './CompanyApp.css'
 import { useNavigate } from 'react-router-dom'
-import { Button } from 'reactstrap'
-import InputField from './InputField'
-import { ReactComponent as Icon } from './icons/CoHomeIcon1.svg'
+import ApprenticeCard from './ApprenticeCard'
 
 
 
@@ -18,38 +16,43 @@ export default function CoTeam() {
             <div className={`${(width > 500) ? 'mt-5 pt-5 top' : 'mb-5 pb-5 bottom'} container px-auto main-container-wNav`}>
 
                 <div className='row'>
+                    <div className='shadow-sm col-6'>
+                        <h5 className='text-left py-3 shadow-sm'>Active Apprentices</h5>
+                    </div>
+                    <div className='shadow-sm col-6'>
 
-                    <h5 className='text-left py-3 col shadow-sm'>Welcome, Rachel👋</h5>
-                </div>
-                <div className='row'>
-
-                    <h1 className='text-center py-3 col'>Team</h1>
-                </div>
-                <div className='row py-2'>
-
-                    <div className='col shadow-sm'>
-                        <InputField
-                            label='Skills or discipline'
-                            type='text'
-                            name='skillsOrDiscipline'
-                            active='focused'
-                        />
+                        <h5 className='text-left py-3 shadow-sm'>Favorite Apprentices</h5>
                     </div>
                 </div>
+                <div className='row m-3 shadow'
+                    onClick={() => {
+                        navigate('/Team/2')
+                    }}
+                >
 
-
-                <Button onClick={() => {
-                    navigate('/Company/2')
-                }
-                } >CoHome2</Button>
-                <div className='row'>
-
-                    <Icon
-                        className='companyHomeIcon'
-
-                    />
-
+                    <ApprenticeCard />
                 </div>
+                <div className='row m-3 shadow'
+                    onClick={() => {
+                        navigate('/Team/2')
+                    }}
+                >
+
+
+                    <ApprenticeCard />
+                </div>
+                <div className='row m-3 shadow'
+                    onClick={() => {
+                        navigate('/Team/2')
+                    }}
+                >
+
+
+                    <ApprenticeCard />
+                </div>
+
+
+
 
             </div>
         </>

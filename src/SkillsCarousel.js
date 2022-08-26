@@ -12,11 +12,11 @@ export default function SkillsCarousel() {
 
             items={[
                 {
-                    altText: 'Marketing Analytics',
+                    // altText: 'Marketing Analytics',
                     caption: 'Marketing Analytics',
                     key: 1,
-                    header: 'Marketing Analytics',
-                    description: 'Marketing Analytics',
+                    // header: 'Marketing Analytics',
+                    // description: 'Marketing Analytics',
 
                     onClick: () => {
                         navigate('/Company/2')
@@ -25,17 +25,17 @@ export default function SkillsCarousel() {
 
                 },
                 {
-                    altText: 'Website Design',
+                    // altText: 'Website Design',
                     caption: 'Website Design',
                     key: 2,
                 },
                 {
-                    altText: 'slide 3',
+                    // altText: 'slide 3',
                     caption: 'slide 3',
                     key: 3,
                 },
                 {
-                    altText: 'slide 4',
+                    // altText: 'slide 4',
                     caption: 'slide 4',
                     key: 4,
 
@@ -86,7 +86,7 @@ export default function SkillsCarousel() {
             // }}
 
 
-            svgIcon={true}
+            // svgIcon={true}
             // className="carousel-container"
             darkIndicator={true}
             darkControls={true}

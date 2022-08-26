@@ -33,6 +33,8 @@ export default function CoHome5() {
             <div className='row text-center py-3'>
                 <div className='col'>
                     <p>By continuing you agree to Lionheart's Terms of Service</p>
+
+
                 </div>
             </div>
         </div>

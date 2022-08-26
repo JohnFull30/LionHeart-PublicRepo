@@ -1,7 +1,10 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Button } from 'reactstrap'
 
 export default function BidCard() {
+    const navigate = useNavigate()
+
     return (
         <div class="card shadow" >
             <div className="card-body">
@@ -13,7 +16,11 @@ export default function BidCard() {
 
                 </div>
                 <p className="card-text">Winner will pay the second highest bi!</p>
-                <Button block className="btn-warning">
+                <Button block className="btn-warning"
+                    onClick={() => {
+                        navigate('/Company/4')
+                    }}
+                >
                     Place bid
                 </Button>
             </div>

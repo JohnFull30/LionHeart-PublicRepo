@@ -2,8 +2,6 @@ import React from 'react'
 import './CompanyApp.css'
 import FeaturedApprentices from './FeaturedApprentices'
 import { useNavigate } from 'react-router-dom'
-import { Button } from 'reactstrap'
-import { ReactComponent as Icon } from './icons/CoHomeIcon1.svg'
 import ApprenticeCard from './ApprenticeCard'
 
 
@@ -24,12 +22,12 @@ export default function CoHome2() {
                     >
                         &#8701;
                     </div>
-                    <h3 className='text-left col-9 shadow-sm'>Website Design</h3>
+                    <h2 className='text-left col-9 shadow-sm'>Website Design</h2>
                 </div>
 
                 <div className='row'>
 
-                    <h3 className='text-center py-3 col'>Featured Apprentices</h3>
+                    <h5 className='text-center py-3 col'>Featured Apprentices</h5>
                 </div>
                 <div className='row'>
                     <FeaturedApprentices />
@@ -39,20 +37,25 @@ export default function CoHome2() {
                         <h2>Apprentices</h2>
                     </div>
                 </div>
-                <div className='row'>
+                <div className='row'
+                    onClick={() => {
+                        navigate('/Company/3')
+                    }}
+                >
                     <ApprenticeCard />
                 </div>
-                <div className='row py-4'>
+                <div className='row py-4'
+                    onClick={() => {
+                        navigate('/Company/3')
+                    }}
+                >
                     <ApprenticeCard />
                 </div>
 
 
 
 
-                <Button onClick={() => {
-                    navigate('/Company/3')
-                }
-                } >CoHome3</Button>
+
 
 
             </div>

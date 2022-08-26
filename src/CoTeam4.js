@@ -4,30 +4,27 @@ import { useNavigate } from 'react-router-dom'
 import { Button } from 'reactstrap'
 import InputField from './InputField'
 import { ReactComponent as Icon } from './icons/CoHomeIcon1.svg'
-import SkillsCarousel from './SkillsCarousel'
 
 
 
 
-
-export default function CoHome() {
+export default function CoTeam4() {
     const navigate = useNavigate()
     const width = window.innerWidth
+    console.log('width: ', width)
     return (
         <>
-            <div className={`${(width > 500) ? 'mt-5 pt-5 top' : 'mb-5 pb-5 bottom'} container px-4 mx-auto main-container-wNav`}>
+
+            <div className={`${(width > 500) ? 'mt-5 pt-5 top' : 'mb-5 pb-5 bottom'} container px-auto main-container-wNav`}>
+
                 <div className='row'>
 
                     <h5 className='text-left py-3 col shadow-sm'>Welcome, Rachel👋</h5>
                 </div>
                 <div className='row'>
 
-                    <h1 className='text-center py-3 col'>What type of skill are you looking for?</h1>
+                    <h1 className='text-center py-3 col'>Team4</h1>
                 </div>
-
-
-
-
                 <div className='row py-2'>
 
                     <div className='col shadow-sm'>
@@ -41,24 +38,19 @@ export default function CoHome() {
                 </div>
 
 
-
-
-                <div className='row'>
-                    <div className='col-12 text-center'>
-                        <Icon
-                            className='companyHomeIcon'
-                        />
-                    </div>
-                </div>
-                <div className='row'>
-                    <div className='col skillsCarousel'>
-                        <SkillsCarousel />
-                    </div>
-                </div>
                 <Button onClick={() => {
                     navigate('/Company/2')
                 }
                 } >CoHome2</Button>
+                <div className='row'>
+
+                    <Icon
+                        className='companyHomeIcon'
+
+                    />
+
+                </div>
+
             </div>
         </>
     )
