@@ -47,8 +47,6 @@ export default function SkillsCarousel() {
 
 
             ]}
-
-            // navigate to "/Company/2" 
             onItemClick={() => {
                 navigate('/Company/2')
             }

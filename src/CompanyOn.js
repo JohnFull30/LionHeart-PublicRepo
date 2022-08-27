@@ -7,6 +7,20 @@ import { Button } from 'reactstrap'
 
 
 export default function Company() {
+  const [inputFields, setInputFields] = React.useState({
+    email: '',
+    password: '',
+  })
+
+  function handleChange(event) {
+    const { name, value } = event.target
+    setInputFields(prevState => ({
+      ...prevState,
+      [name]: value
+    }))
+    console.log('state: ', inputFields)
+
+  }
   const navigate = useNavigate()
 
   return (
