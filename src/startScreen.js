@@ -5,6 +5,8 @@ import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { Button } from "@mui/material";
 import "./startScreen.css";
 import logo from "./logo.png";
+import { useNavigate } from 'react-router-dom'
+
 
 const styles = {
   root: {
@@ -33,6 +35,9 @@ const styles = {
 };
 
 function StartScreen({ classes, userSubmitted }) {
+  const navigate = useNavigate()
+
+
   return (
     <div className={`${classes.root} Main-screen`}>
       <header className="header">
@@ -62,7 +67,12 @@ function StartScreen({ classes, userSubmitted }) {
           <BusinessTwoToneIcon fontSize="large" color="secondary" />
           <div className="title">For Companies</div>
           <div className="sub-title">Grow your business affordably</div>
-          <Button variant="contained" color="secondary">
+          <Button
+            onClick={() => {
+              navigate(`/onboarding-C`)
+            }}
+            variant="contained"
+            color="secondary">
             Sign up
           </Button>
         </div>
